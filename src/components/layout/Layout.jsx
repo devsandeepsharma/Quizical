@@ -1,14 +1,15 @@
 import { Outlet } from "react-router-dom";
 
-import Logo from "../ui/Logo";
+import Header from "./Header";
 import Button from "../ui/Button";
+
 import { HiOutlineArrowSmallRight } from "react-icons/hi2";
 import { Fa42Group } from "react-icons/fa6";
 
 const Layout = () => {
     return (
-        <div className="bg-orange-50 flex flex-col justify-center items-center min-h-screen gap-3">
-            <Logo />
+        <div className="bg-orange-50 min-h-screen p-4">
+            <Header />
             <Outlet />
             <div>
                 <Button icon={<Fa42Group />}>Primary</Button>

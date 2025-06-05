@@ -31,25 +31,25 @@ const HamburgerToggle = ({ isOpen, toggle, className }) => {
             aria-expanded={isOpen}
         >
             <motion.span
-                className="block w-6 h-0.5 bg-current rounded origin-center"
+                className="block w-6 h-0.5 bg-gray-800 rounded origin-center"
                 animate={isOpen ? "openTop" : "closed"}
                 variants={lineVariants}
                 transition={{ duration: 0.3 }}
             />
             <motion.span
-                className="block w-4 h-0.5 ml-auto bg-current rounded origin-center"
+                className="block w-4 h-0.5 ml-auto bg-gray-800 rounded origin-center"
                 animate={isOpen ? "openMiddle" : "closed"}
                 variants={lineVariants}
                 transition={{ duration: 0.3 }}
             />
             <motion.span
-                className="block w-6 h-0.5 bg-current rounded origin-center"
+                className="block w-6 h-0.5 bg-gray-800 rounded origin-center"
                 animate={isOpen ? "openBottom" : "closed"}
                 variants={lineVariants}
                 transition={{ duration: 0.3 }}
             />
         </button>
-  );
+    );
 };
 
 export default HamburgerToggle;

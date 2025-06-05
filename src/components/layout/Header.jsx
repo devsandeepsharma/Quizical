@@ -35,7 +35,7 @@ const Header = () => {
     }, [openNav]);
 
     return (
-        <header className="flex justify-between items-center">
+        <header className="p-4 max-w-6xl mx-auto flex justify-between items-center">
             <Link to="/"><Logo /></Link>
             <nav className="md:hidden relative">
                 <HamburgerToggle 

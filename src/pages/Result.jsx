@@ -1,5 +1,10 @@
+import { useParams } from "react-router-dom";
+
 const Result = () => {
-    return <h2 className="text-lg">Result Page</h2>
+
+    const { score } = useParams();
+
+    return <h2 className="text-lg">Your score is {score} out of 5</h2>
 }
 
 export default Result;

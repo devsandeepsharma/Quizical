@@ -3,12 +3,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
 import Instructions from "./pages/Instructions";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
 import Leaderboard from "./pages/Leaderboard";
 import Quiz from "./pages/Quiz";
-import Result from "./pages/Result";
 import NotFound from "./pages/NotFound";
+import Result from "./pages/Result";
 
 const App = () => {
 
@@ -22,14 +20,6 @@ const App = () => {
                     element: <Home />
                 },
                 {
-                    path: "/login",
-                    element: <Login />
-                },
-                {
-                    path: "/signup",
-                    element: <Signup />
-                },
-                {
                     path: "/leaderboard",
                     element: <Leaderboard />
                 },
@@ -38,11 +28,11 @@ const App = () => {
                     element: <Instructions />
                 },
                 { 
-                    path: "/quiz/:quizId", 
+                    path: "/quiz/:category", 
                     element: <Quiz /> 
                 },
                 { 
-                    path: "/results/:quizId", 
+                    path: "/results/:score", 
                     element: <Result /> 
                 },
                 { 

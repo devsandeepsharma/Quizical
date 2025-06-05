@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import Button from "../components/ui/Button";
@@ -13,11 +14,13 @@ const categories = [
 
 const Home = () => {
 
+    const navigate = useNavigate();
+
     const [selected, setSelected] = useState(null);
 
     const handlePlay = () => {
         if (selected) {
-            console.log("Selected category:", selected); 
+            navigate(`/quiz/${selected}`)
         } else {
             console.log("Please select a category!");
         }
